@@ -1,0 +1,59 @@
+vessel_id,vessel_name,endpoint,connection,pressure_dyn_cm2,pressure_mmHg,flow_ml_s,pressure_source
+0,branch0_seg0,inlet,FLOW_cap_fontan_x:branch0_seg0,20828.87631024,15.622985186420847,20.39503434098077,3D boundary average
+0,branch0_seg0,outlet,branch0_seg0:J0,20760.670537891547,15.571826508671897,20.39503434098077,flow-weighted normal-junction pressure from 3D endpoint probes
+1,branch1_seg0,inlet,J0:branch1_seg0,20760.670537891547,15.571826508671897,-1.3388839738807956,flow-weighted normal-junction pressure from 3D endpoint probes
+1,branch1_seg0,outlet,branch1_seg0:FLOW_cap_L_HV,20770.64925582,15.579311183315582,-1.3388839738807956,3D boundary average
+2,branch2_seg0,inlet,J0:branch2_seg0,20760.670537891547,15.571826508671897,24.24309242517396,flow-weighted normal-junction pressure from 3D endpoint probes
+2,branch2_seg0,outlet,branch2_seg0:J4,20626.01133078421,15.470823518087196,24.24309242517396,flow-weighted normal-junction pressure from 3D endpoint probes
+3,branch2_seg1,inlet,J4:branch2_seg1,20626.01133078421,15.470823518087196,24.243092425154714,flow-weighted normal-junction pressure from 3D endpoint probes
+3,branch2_seg1,outlet,branch2_seg1:J5,20627.67015796733,15.472067744233758,24.243092425154714,flow-weighted normal-junction pressure from 3D endpoint probes
+4,branch2_seg2,inlet,J5:branch2_seg2,20627.67015796733,15.472067744233758,24.24309242513553,flow-weighted normal-junction pressure from 3D endpoint probes
+4,branch2_seg2,outlet,branch2_seg2:J1,20315.92387168187,15.238238154004492,24.24309242513553,flow-weighted normal-junction pressure from 3D endpoint probes
+5,branch3_seg0,inlet,J1:branch3_seg0,20315.92387168187,15.238238154004492,12.846742456804956,flow-weighted normal-junction pressure from 3D endpoint probes
+5,branch3_seg0,outlet,branch3_seg0:J2,19773.458641118494,14.831354645983778,12.846742456804956,flow-weighted normal-junction pressure from 3D endpoint probes
+6,branch4_seg0,inlet,J2:branch4_seg0,19773.458641118494,14.831354645983778,1.212566972035214,flow-weighted normal-junction pressure from 3D endpoint probes
+6,branch4_seg0,outlet,branch4_seg0:RESISTANCE_cap_l_pa_7_1_x,19748.84711657,14.812894433454343,1.212566972035214,3D boundary average
+7,branch5_seg0,inlet,J1:branch5_seg0,20315.92387168187,15.238238154004492,-6.45572144458078,flow-weighted normal-junction pressure from 3D endpoint probes
+7,branch5_seg0,outlet,branch5_seg0:FLOW_cap_rt_svc_x,20537.073578260002,15.404114533430343,-6.45572144458078,3D boundary average
+8,branch6_seg0,inlet,J0:branch6_seg0,20760.670537891547,15.571826508671897,-0.33944953775079545,flow-weighted normal-junction pressure from 3D endpoint probes
+8,branch6_seg0,outlet,branch6_seg0:FLOW_cap_R_HV,20824.30882672,15.619559282579019,-0.33944953775079545,3D boundary average
+9,branch7_seg0,inlet,J1:branch7_seg0,20315.92387168187,15.238238154004492,2.5088516038472086,flow-weighted normal-junction pressure from 3D endpoint probes
+9,branch7_seg0,outlet,branch7_seg0:RESISTANCE_cap_r_pa_4_x,20099.73316629,15.076081341631538,2.5088516038472086,3D boundary average
+10,branch8_seg0,inlet,J2:branch8_seg0,19773.458641118494,14.831354645983778,1.0654333615092129,flow-weighted normal-junction pressure from 3D endpoint probes
+10,branch8_seg0,outlet,branch8_seg0:RESISTANCE_cap_l_pa_4_x,19895.401246,14.922819374146803,1.0654333615092129,3D boundary average
+11,branch9_seg0,inlet,J0:branch9_seg0,20760.670537891547,15.571826508671897,-2.1697245725807948,flow-weighted normal-junction pressure from 3D endpoint probes
+11,branch9_seg0,outlet,branch9_seg0:FLOW_cap_M_HV,20793.87586039,15.596732617564992,-2.1697245725807948,3D boundary average
+12,branch10_seg0,inlet,J1:branch10_seg0,20315.92387168187,15.238238154004492,1.5132755463042122,flow-weighted normal-junction pressure from 3D endpoint probes
+12,branch10_seg0,outlet,branch10_seg0:RESISTANCE_cap_r_pa_1_3_x,20109.46540853,15.083381143794721,1.5132755463042122,3D boundary average
+13,branch11_seg0,inlet,J1:branch11_seg0,20315.92387168187,15.238238154004492,2.82432167564364,flow-weighted normal-junction pressure from 3D endpoint probes
+13,branch11_seg0,outlet,branch11_seg0:J3,20064.837662268375,15.049907488837832,2.82432167564364,flow-weighted normal-junction pressure from 3D endpoint probes
+14,branch12_seg0,inlet,J3:branch12_seg0,20064.837662268375,15.049907488837832,1.2710920002352122,flow-weighted normal-junction pressure from 3D endpoint probes
+14,branch12_seg0,outlet,branch12_seg0:RESISTANCE_cap_r_pa_2_x,20013.30026632,15.011251156088266,1.2710920002352122,3D boundary average
+15,branch13_seg0,inlet,J2:branch13_seg0,19773.458641118494,14.831354645983778,0.7559702940415112,flow-weighted normal-junction pressure from 3D endpoint probes
+15,branch13_seg0,outlet,branch13_seg0:RESISTANCE_cap_l_pa_2_x,19864.264923310002,14.899465147019997,0.7559702940415112,3D boundary average
+16,branch14_seg0,inlet,J2:branch14_seg0,19773.458641118494,14.831354645983778,1.400081725830212,flow-weighted normal-junction pressure from 3D endpoint probes
+16,branch14_seg0,outlet,branch14_seg0:RESISTANCE_cap_l_pa_1_1_x,19829.50721532,14.873394650035253,1.400081725830212,3D boundary average
+17,branch15_seg0,inlet,J1:branch15_seg0,20315.92387168187,15.238238154004492,3.023306062031212,flow-weighted normal-junction pressure from 3D endpoint probes
+17,branch15_seg0,outlet,branch15_seg0:RESISTANCE_cap_pa_x,20144.6913781,15.10980286681868,3.023306062031212,3D boundary average
+18,branch16_seg0,inlet,J2:branch16_seg0,19773.458641118494,14.831354645983778,1.3284031318572107,flow-weighted normal-junction pressure from 3D endpoint probes
+18,branch16_seg0,outlet,branch16_seg0:RESISTANCE_cap_l_pa_7_x,19780.56102726,14.836681888405513,1.3284031318572107,3D boundary average
+19,branch17_seg0,inlet,J1:branch17_seg0,20315.92387168187,15.238238154004492,1.5410004183892119,flow-weighted normal-junction pressure from 3D endpoint probes
+19,branch17_seg0,outlet,branch17_seg0:RESISTANCE_cap_r_pa_1_2_x,20125.695448989998,15.095554708892754,1.5410004183892119,3D boundary average
+20,branch18_seg0,inlet,J3:branch18_seg0,20064.837662268375,15.049907488837832,1.553229675389209,flow-weighted normal-junction pressure from 3D endpoint probes
+20,branch18_seg0,outlet,branch18_seg0:RESISTANCE_cap_r_pa_2_1_x,20009.82280422,15.008642837806212,1.553229675389209,3D boundary average
+21,branch19_seg0,inlet,J1:branch19_seg0,20315.92387168187,15.238238154004492,3.2388137693522117,flow-weighted normal-junction pressure from 3D endpoint probes
+21,branch19_seg0,outlet,branch19_seg0:RESISTANCE_cap_r_pa_5_x,19950.32720064,14.964017341954065,3.2388137693522117,3D boundary average
+22,branch20_seg0,inlet,J2:branch20_seg0,19773.458641118494,14.831354645983778,1.635818197957211,flow-weighted normal-junction pressure from 3D endpoint probes
+22,branch20_seg0,outlet,branch20_seg0:RESISTANCE_cap_l_pa_5_x,19687.9802509,14.767240403609307,1.635818197957211,3D boundary average
+23,branch21_seg0,inlet,J2:branch21_seg0,19773.458641118494,14.831354645983778,0.8634112549635118,flow-weighted normal-junction pressure from 3D endpoint probes
+23,branch21_seg0,outlet,branch21_seg0:RESISTANCE_cap_l_pa_3_1_x,19589.2652881,14.69319788789547,0.8634112549635118,3D boundary average
+24,branch22_seg0,inlet,J2:branch22_seg0,19773.458641118494,14.831354645983778,1.104318668715211,flow-weighted normal-junction pressure from 3D endpoint probes
+24,branch22_seg0,outlet,branch22_seg0:RESISTANCE_cap_l_pa_1_x,19812.12069734,14.860353653065511,1.104318668715211,3D boundary average
+25,branch23_seg0,inlet,J1:branch23_seg0,20315.92387168187,15.238238154004492,2.063841330444213,flow-weighted normal-junction pressure from 3D endpoint probes
+25,branch23_seg0,outlet,branch23_seg0:RESISTANCE_cap_r_pa_1_x,20188.8023406,15.142888901006584,2.063841330444213,3D boundary average
+26,branch24_seg0,inlet,J2:branch24_seg0,19773.458641118494,14.831354645983778,2.2277452409492127,flow-weighted normal-junction pressure from 3D endpoint probes
+26,branch24_seg0,outlet,branch24_seg0:RESISTANCE_cap_pa_x_2,19780.26984989,14.836463486813878,2.2277452409492127,3D boundary average
+27,branch25_seg0,inlet,J1:branch25_seg0,20315.92387168187,15.238238154004492,1.1386610068802128,flow-weighted normal-junction pressure from 3D endpoint probes
+27,branch25_seg0,outlet,branch25_seg0:RESISTANCE_cap_r_pa_3_x,20064.97664787,15.050011736900137,1.1386610068802128,3D boundary average
+28,branch26_seg0,inlet,J2:branch26_seg0,19773.458641118494,14.831354645983778,1.2529936089272131,flow-weighted normal-junction pressure from 3D endpoint probes
+28,branch26_seg0,outlet,branch26_seg0:RESISTANCE_cap_l_pa_3_x,19665.07640169,14.750061056457298,1.2529936089272131,3D boundary average

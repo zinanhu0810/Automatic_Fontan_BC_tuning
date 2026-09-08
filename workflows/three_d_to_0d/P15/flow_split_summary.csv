@@ -1,0 +1,2 @@
+n_frames,mean_total_inlet_inward_flow_ml_s,mean_lpa_outward_flow_ml_s,mean_rpa_outward_flow_ml_s,mean_total_outlet_outward_flow_ml_s,mean_lpa_outward_fraction,mean_rpa_outward_fraction,mean_outlet_minus_inlet_ml_s
+30,30.698844366919495,14.971936025060902,20.417614064770266,35.38955008983117,0.4222930207809468,0.5777069792190531,4.690705722911676

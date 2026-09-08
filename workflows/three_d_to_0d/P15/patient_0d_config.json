@@ -1,0 +1,21 @@
+{
+  "patient_id": "P15",
+  "solver_xml": "solver.xml",
+  "surface_model": "mesh/mesh-complete.exterior.vtp",
+  "boundary_surfaces_directory": "mesh/mesh-surfaces",
+  "centerline_root": "cap_fontan_x",
+  "output_directory": "rom",
+  "units": "cm",
+  "rom_options": {
+    "material_model": "OLUFSEN",
+    "element_size": 0.01,
+    "min_num_elements": 5,
+    "seg_min_num": 1,
+    "seg_size": 9999,
+    "olufsen_material_k1": 0.0,
+    "olufsen_material_k2": -22.5267,
+    "olufsen_material_k3": 10000000.0,
+    "olufsen_material_exp": 1.0,
+    "olufsen_material_pressure": 0.0
+  }
+}

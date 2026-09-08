@@ -1,0 +1,13 @@
+{
+  "number_of_rows": 51707,
+  "number_of_boundaries": 24,
+  "number_of_flow_boundaries": 5,
+  "number_of_resistance_boundaries": 19,
+  "mean_root_flow_ml_s": 20.395034341197455,
+  "mean_terminal_flow_sum_ml_s": 20.395034341197093,
+  "mean_resistance_outflow_ml_s": 30.698813870680684,
+  "mass_residual_ml_s": 3.623767952376511e-13,
+  "relative_mass_residual": 8.88394667974798e-15,
+  "max_boundary_flow_range_ml_s": 0.0,
+  "max_boundary_pressure_range_mmHg": 0.0
+}

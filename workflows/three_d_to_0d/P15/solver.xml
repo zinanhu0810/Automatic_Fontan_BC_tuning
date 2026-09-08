@@ -1,0 +1,467 @@
+<?xml version="1.0" ?>
+<svMultiPhysicsFile version="0.1">
+  <GeneralSimulationParameters>
+    <Continue_previous_simulation>true</Continue_previous_simulation>
+    <Number_of_spatial_dimensions>3</Number_of_spatial_dimensions>
+    <Number_of_time_steps>32000</Number_of_time_steps>
+    <Time_step_size>0.00056075</Time_step_size>
+    <Spectral_radius_of_infinite_time_step>0.50</Spectral_radius_of_infinite_time_step>
+    <Searched_file_name_to_trigger_stop>STOP_SIM</Searched_file_name_to_trigger_stop>
+    <Save_results_to_VTK_format>1</Save_results_to_VTK_format>
+    <Name_prefix_of_saved_VTK_files>result</Name_prefix_of_saved_VTK_files>
+    <Increment_in_saving_VTK_files>50</Increment_in_saving_VTK_files>
+    <Start_saving_after_time_step>1</Start_saving_after_time_step>
+    <Increment_in_saving_restart_files>1000</Increment_in_saving_restart_files>
+    <Convert_BIN_to_VTK_format>0</Convert_BIN_to_VTK_format>
+    <Verbose>1</Verbose>
+    <Warning>0</Warning>
+    <Debug>0</Debug>
+  </GeneralSimulationParameters>
+   
+  <Add_mesh name="msh">
+    <Mesh_file_path>mesh/mesh-complete.mesh.vtu</Mesh_file_path>
+     
+    <Add_face name="cap_fontan_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_fontan_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_L_HV">
+      <Face_file_path>mesh/mesh-surfaces/cap_L_HV.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_l_pa_1_1_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_l_pa_1_1_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_l_pa_1_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_l_pa_1_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_l_pa_2_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_l_pa_2_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_l_pa_3_1_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_l_pa_3_1_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_l_pa_3_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_l_pa_3_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_l_pa_4_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_l_pa_4_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_l_pa_5_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_l_pa_5_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_l_pa_7_1_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_l_pa_7_1_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_l_pa_7_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_l_pa_7_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_M_HV">
+      <Face_file_path>mesh/mesh-surfaces/cap_M_HV.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_pa_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_pa_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_pa_x_2">
+      <Face_file_path>mesh/mesh-surfaces/cap_pa_x_2.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_R_HV">
+      <Face_file_path>mesh/mesh-surfaces/cap_R_HV.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_r_pa_1_2_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_r_pa_1_2_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_r_pa_1_3_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_r_pa_1_3_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_r_pa_1_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_r_pa_1_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_r_pa_2_1_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_r_pa_2_1_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_r_pa_2_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_r_pa_2_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_r_pa_3_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_r_pa_3_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_r_pa_4_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_r_pa_4_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_r_pa_5_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_r_pa_5_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="cap_rt_svc_x">
+      <Face_file_path>mesh/mesh-surfaces/cap_rt_svc_x.vtp</Face_file_path>
+    </Add_face>
+     
+    <Add_face name="walls_combined">
+      <Face_file_path>mesh/walls_combined.vtp</Face_file_path>
+    </Add_face>
+     
+  </Add_mesh>
+   
+  <Add_equation type="fluid">
+    <Coupled>true</Coupled>
+    <Min_iterations>2</Min_iterations>
+    <Max_iterations>7</Max_iterations>
+    <Tolerance>1e-4</Tolerance>
+    <Backflow_stabilization_coefficient>0.2</Backflow_stabilization_coefficient>
+    <Density>1.06</Density>
+    <Viscosity model="Constant">
+      <Value>0.04</Value>
+    </Viscosity>
+    <Output type="Spatial">
+      <Velocity>true</Velocity>
+      <Pressure>true</Pressure>
+      <Traction>true</Traction>
+      <Vorticity>true</Vorticity>
+      <Divergence>true</Divergence>
+      <WSS>true</WSS>
+    </Output>
+    <Output type="B_INT">
+      <Pressure>true</Pressure>
+      <Velocity>true</Velocity>
+    </Output>
+    <Output type="V_INT">
+      <Pressure>true</Pressure>
+    </Output>
+    <LS type="NS">
+      <Linear_algebra type="fsils">
+        <Preconditioner>fsils</Preconditioner>
+      </Linear_algebra>
+      <Max_iterations>50</Max_iterations>
+      <NS_GM_max_iterations>10</NS_GM_max_iterations>
+      <NS_CG_max_iterations>300</NS_CG_max_iterations>
+      <Tolerance>0.4</Tolerance>
+      <NS_GM_tolerance>0.01</NS_GM_tolerance>
+      <NS_CG_tolerance>0.2</NS_CG_tolerance>
+      <Absolute_tolerance>1e-17</Absolute_tolerance>
+      <Krylov_space_dimension>250</Krylov_space_dimension>
+    </LS>
+    <Add_BC name="cap_l_pa_1_1_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>12874.368524574129</Distal_resistance>
+        <Proximal_resistance>1287.436852457413</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_l_pa_1_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>16307.934672135887</Distal_resistance>
+        <Proximal_resistance>1630.7934672135887</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_l_pa_2_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>23884.76172383578</Distal_resistance>
+        <Proximal_resistance>2388.476172383578</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_l_pa_3_1_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>20624.30103755929</Distal_resistance>
+        <Proximal_resistance>2062.430103755929</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_l_pa_3_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>14266.268765808501</Distal_resistance>
+        <Proximal_resistance>1426.6268765808502</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_l_pa_4_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>16974.131412082606</Distal_resistance>
+        <Proximal_resistance>1697.4131412082606</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_l_pa_5_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>10940.47249875008</Distal_resistance>
+        <Proximal_resistance>1094.047249875008</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_l_pa_7_1_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>14804.931928187305</Distal_resistance>
+        <Proximal_resistance>1480.4931928187304</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_l_pa_7_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>13535.636882379096</Distal_resistance>
+        <Proximal_resistance>1353.5636882379094</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_pa_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>6056.494372377809</Distal_resistance>
+        <Proximal_resistance>605.6494372377808</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_pa_x_2">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>8071.205830070505</Distal_resistance>
+        <Proximal_resistance>807.1205830070504</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_r_pa_1_2_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>11869.37586947587</Distal_resistance>
+        <Proximal_resistance>1186.937586947587</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_r_pa_1_3_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>12079.86283666716</Distal_resistance>
+        <Proximal_resistance>1207.986283666716</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_r_pa_1_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>8892.063121246643</Distal_resistance>
+        <Proximal_resistance>889.2063121246644</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_r_pa_2_1_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>11710.538220447806</Distal_resistance>
+        <Proximal_resistance>1171.0538220447806</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_r_pa_2_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>14311.86256463974</Distal_resistance>
+        <Proximal_resistance>1431.186256463974</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_r_pa_3_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>16015.799042851006</Distal_resistance>
+        <Proximal_resistance>1601.5799042851004</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_r_pa_4_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>7282.540397229235</Distal_resistance>
+        <Proximal_resistance>728.2540397229235</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_r_pa_5_x">
+      <Type>Neu</Type>
+      <Time_dependence>RCR</Time_dependence>
+      <RCR_values>
+        <Capacitance>1.5e-4s</Capacitance>
+        <Distal_resistance>5599.182840686523</Distal_resistance>
+        <Proximal_resistance>559.9182840686523</Proximal_resistance>
+        <Distal_pressure>0</Distal_pressure>
+        <Initial_pressure>0</Initial_pressure>
+      </RCR_values>
+    </Add_BC>
+    <Add_BC name="cap_L_HV">
+      <Type>Dir</Type>
+      <Time_dependence>Unsteady</Time_dependence>
+      <Temporal_values_file_path>cap_L_HV.flow</Temporal_values_file_path>
+      <Profile>Parabolic</Profile>
+      <Impose_flux>true</Impose_flux>
+    </Add_BC>
+    <Add_BC name="cap_M_HV">
+      <Type>Dir</Type>
+      <Time_dependence>Unsteady</Time_dependence>
+      <Temporal_values_file_path>cap_M_HV.flow</Temporal_values_file_path>
+      <Profile>Parabolic</Profile>
+      <Impose_flux>true</Impose_flux>
+    </Add_BC>
+    <Add_BC name="cap_R_HV">
+      <Type>Dir</Type>
+      <Time_dependence>Unsteady</Time_dependence>
+      <Temporal_values_file_path>cap_R_HV.flow</Temporal_values_file_path>
+      <Profile>Parabolic</Profile>
+      <Impose_flux>true</Impose_flux>
+    </Add_BC>
+    <Add_BC name="cap_fontan_x">
+      <Type>Dir</Type>
+      <Time_dependence>Unsteady</Time_dependence>
+      <Temporal_values_file_path>cap_fontan_x.flow</Temporal_values_file_path>
+      <Profile>Parabolic</Profile>
+      <Impose_flux>true</Impose_flux>
+    </Add_BC>
+    <Add_BC name="cap_rt_svc_x">
+      <Type>Dir</Type>
+      <Time_dependence>Unsteady</Time_dependence>
+      <Temporal_values_file_path>cap_rt_svc_x.flow</Temporal_values_file_path>
+      <Profile>Parabolic</Profile>
+      <Impose_flux>true</Impose_flux>
+    </Add_BC>
+    <Add_BC name="walls_combined">
+      <Type>Dir</Type>
+      <Time_dependence>Steady</Time_dependence>
+      <Value>0.0</Value>
+    </Add_BC>
+  </Add_equation>
+  <Add_equation type="scalarTransport">
+    <Coupled>false</Coupled>
+    <Min_iterations>1</Min_iterations>
+    <Max_iterations>7</Max_iterations>
+    <Tolerance>1e-3</Tolerance>
+    <Conductivity>1e-8</Conductivity>
+    <Source_term>0.0</Source_term>
+    <Output type="Volume_integral">
+      <Temperature>true</Temperature>
+    </Output>
+    <Output type="Boundary_integral">
+      <Temperature>true</Temperature>
+    </Output>
+    <Output type="Alias">
+      <Temperature>Concentration</Temperature>
+    </Output>
+    <Output type="Spatial">
+      <Temperature>true</Temperature>
+    </Output>
+    <LS type="GMRES">
+      <Linear_algebra type="fsils">
+        <Preconditioner>fsils</Preconditioner>
+      </Linear_algebra>
+      <Tolerance>1e-4</Tolerance>
+      <Max_iterations>1000</Max_iterations>
+      <Krylov_space_dimension>300</Krylov_space_dimension>
+    </LS>
+    <Add_BC name="cap_L_HV">
+      <Type>Dirichlet</Type>
+      <Time_dependence>Steady</Time_dependence>
+      <Value>1.0</Value>
+    </Add_BC>
+    <Add_BC name="cap_M_HV">
+      <Type>Dirichlet</Type>
+      <Time_dependence>Steady</Time_dependence>
+      <Value>1.0</Value>
+    </Add_BC>
+    <Add_BC name="cap_R_HV">
+      <Type>Dirichlet</Type>
+      <Time_dependence>Steady</Time_dependence>
+      <Value>1.0</Value>
+    </Add_BC>
+    <Add_BC name="cap_fontan_x">
+      <Type>Dirichlet</Type>
+      <Time_dependence>Steady</Time_dependence>
+      <Value>0.0</Value>
+    </Add_BC>
+    <Add_BC name="cap_rt_svc_x">
+      <Type>Dirichlet</Type>
+      <Time_dependence>Steady</Time_dependence>
+      <Value>0.0</Value>
+    </Add_BC>
+  </Add_equation>
+</svMultiPhysicsFile>

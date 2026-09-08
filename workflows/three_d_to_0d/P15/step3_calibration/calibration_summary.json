@@ -1,0 +1,80 @@
+{
+  "method": "svZeroDCalibrator steady branch-resistance calibration",
+  "calibrator": "svzerodcalibrator",
+  "solver": "svzerodsolver",
+  "calibrator_termination": "Maximum number of iterations reached",
+  "three_d_window": {
+    "number_of_samples": 100,
+    "source": "P15/steady/48-procs"
+  },
+  "identifiability": {
+    "calibrated": [
+      "R_poiseuille"
+    ],
+    "preserved": [
+      "C",
+      "L",
+      "stenosis_coefficient"
+    ],
+    "reason": "Steady data have zero temporal derivatives, so C and L are not identifiable."
+  },
+  "normal_junction_pressures_mmHg": {
+    "J0": 15.571826508671897,
+    "J1": 15.238238154004492,
+    "J2": 14.831354645983778,
+    "J3": 15.049907488837832,
+    "J4": 15.470823518087196,
+    "J5": 15.472067744233758
+  },
+  "fontan_root_pressure_correction": {
+    "vessel_name": "branch0_seg0",
+    "resistance_before_dyn_s_cm5": 3.3442342487947516,
+    "resistance_correction_dyn_s_cm5": 10.300337096099307,
+    "resistance_after_dyn_s_cm5": 13.644571344894059
+  },
+  "three_d_target": {
+    "fontan_pressure_mmHg": 15.622985186420847,
+    "lpa_flow_ml_s": 12.846742456593597,
+    "rpa_flow_ml_s": 17.852071412700003,
+    "pulmonary_flow_ml_s": 30.698813869293602,
+    "lpa_fraction": 0.4184768346845972,
+    "rpa_fraction": 0.5815231653154028
+  },
+  "zero_d_baseline": {
+    "fontan_pressure_mmHg": 15.02935964606304,
+    "lpa_flow_ml_s": 12.938478674698827,
+    "rpa_flow_ml_s": 17.760335195981853,
+    "pulmonary_flow_ml_s": 30.69881387068068,
+    "lpa_fraction": 0.42146510054761094,
+    "rpa_fraction": 0.578534899452389
+  },
+  "zero_d_calibrated": {
+    "fontan_pressure_mmHg": 15.62298518642237,
+    "lpa_flow_ml_s": 12.85016491825427,
+    "rpa_flow_ml_s": 17.84864895242614,
+    "pulmonary_flow_ml_s": 30.69881387068041,
+    "lpa_fraction": 0.4185883198089001,
+    "rpa_fraction": 0.5814116801910998
+  },
+  "maximum_calibrated_target_relative_error": 0.0002664069644298238,
+  "raw_negative_calibrated_resistance_count": 6,
+  "raw_negative_resistances_restored_to_geometric_values": [
+    "branch8_seg0",
+    "branch13_seg0",
+    "branch14_seg0",
+    "branch16_seg0",
+    "branch22_seg0",
+    "branch24_seg0"
+  ],
+  "applied_negative_resistance_count": 0,
+  "outputs": {
+    "calibration_input": "P15/step3_calibration/P15_steady_calibration_input.json",
+    "calibrated_model": "P15/step3_calibration/P15_0d_calibrated.json",
+    "calibrated_result": "P15/step3_calibration/P15_0d_calibrated.csv",
+    "metric_table": "P15/step3_calibration/calibration_metrics.csv",
+    "parameter_table": "P15/step3_calibration/vessel_parameter_comparison.csv",
+    "observation_table": "P15/step3_calibration/calibration_observations.csv",
+    "summary_figure": "P15/step3_calibration/calibration_summary.png",
+    "calibrator_log": "P15/step3_calibration/svzerodcalibrator.log"
+  }
+}

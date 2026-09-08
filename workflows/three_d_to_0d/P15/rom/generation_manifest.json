@@ -1,0 +1,182 @@
+{
+  "patient_id": "P15",
+  "source_solver_xml": "P15/solver.xml",
+  "source_surface_model": "P15/mesh/mesh-complete.exterior.vtp",
+  "centerlines": "P15/rom/centerlines.vtp",
+  "raw_0d_json": "P15/rom/P15_0d_raw.json",
+  "multi_inlet_0d_json": "P15/rom/P15_0d.json",
+  "fluid": {
+    "density": 1.06,
+    "viscosity": 0.04
+  },
+  "simulation": {
+    "time_step": 0.00056075,
+    "number_of_time_steps": 32000
+  },
+  "flow_boundaries": {
+    "cap_L_HV": {
+      "waveform": "P15/cap_L_HV.flow"
+    },
+    "cap_M_HV": {
+      "waveform": "P15/cap_M_HV.flow"
+    },
+    "cap_R_HV": {
+      "waveform": "P15/cap_R_HV.flow"
+    },
+    "cap_fontan_x": {
+      "waveform": "P15/cap_fontan_x.flow"
+    },
+    "cap_rt_svc_x": {
+      "waveform": "P15/cap_rt_svc_x.flow"
+    }
+  },
+  "rcr_boundaries": {
+    "cap_l_pa_1_1_x": {
+      "Rp": 1287.436852457413,
+      "C": 0.00015,
+      "Rd": 12874.368524574129,
+      "Pd": 0.0
+    },
+    "cap_l_pa_1_x": {
+      "Rp": 1630.7934672135887,
+      "C": 0.00015,
+      "Rd": 16307.934672135887,
+      "Pd": 0.0
+    },
+    "cap_l_pa_2_x": {
+      "Rp": 2388.476172383578,
+      "C": 0.00015,
+      "Rd": 23884.76172383578,
+      "Pd": 0.0
+    },
+    "cap_l_pa_3_1_x": {
+      "Rp": 2062.430103755929,
+      "C": 0.00015,
+      "Rd": 20624.30103755929,
+      "Pd": 0.0
+    },
+    "cap_l_pa_3_x": {
+      "Rp": 1426.6268765808502,
+      "C": 0.00015,
+      "Rd": 14266.268765808501,
+      "Pd": 0.0
+    },
+    "cap_l_pa_4_x": {
+      "Rp": 1697.4131412082606,
+      "C": 0.00015,
+      "Rd": 16974.131412082606,
+      "Pd": 0.0
+    },
+    "cap_l_pa_5_x": {
+      "Rp": 1094.047249875008,
+      "C": 0.00015,
+      "Rd": 10940.47249875008,
+      "Pd": 0.0
+    },
+    "cap_l_pa_7_1_x": {
+      "Rp": 1480.4931928187304,
+      "C": 0.00015,
+      "Rd": 14804.931928187305,
+      "Pd": 0.0
+    },
+    "cap_l_pa_7_x": {
+      "Rp": 1353.5636882379094,
+      "C": 0.00015,
+      "Rd": 13535.636882379096,
+      "Pd": 0.0
+    },
+    "cap_pa_x": {
+      "Rp": 605.6494372377808,
+      "C": 0.00015,
+      "Rd": 6056.494372377809,
+      "Pd": 0.0
+    },
+    "cap_pa_x_2": {
+      "Rp": 807.1205830070504,
+      "C": 0.00015,
+      "Rd": 8071.205830070505,
+      "Pd": 0.0
+    },
+    "cap_r_pa_1_2_x": {
+      "Rp": 1186.937586947587,
+      "C": 0.00015,
+      "Rd": 11869.37586947587,
+      "Pd": 0.0
+    },
+    "cap_r_pa_1_3_x": {
+      "Rp": 1207.986283666716,
+      "C": 0.00015,
+      "Rd": 12079.86283666716,
+      "Pd": 0.0
+    },
+    "cap_r_pa_1_x": {
+      "Rp": 889.2063121246644,
+      "C": 0.00015,
+      "Rd": 8892.063121246643,
+      "Pd": 0.0
+    },
+    "cap_r_pa_2_1_x": {
+      "Rp": 1171.0538220447806,
+      "C": 0.00015,
+      "Rd": 11710.538220447806,
+      "Pd": 0.0
+    },
+    "cap_r_pa_2_x": {
+      "Rp": 1431.186256463974,
+      "C": 0.00015,
+      "Rd": 14311.86256463974,
+      "Pd": 0.0
+    },
+    "cap_r_pa_3_x": {
+      "Rp": 1601.5799042851004,
+      "C": 0.00015,
+      "Rd": 16015.799042851006,
+      "Pd": 0.0
+    },
+    "cap_r_pa_4_x": {
+      "Rp": 728.2540397229235,
+      "C": 0.00015,
+      "Rd": 7282.540397229235,
+      "Pd": 0.0
+    },
+    "cap_r_pa_5_x": {
+      "Rp": 559.9182840686523,
+      "C": 0.00015,
+      "Rd": 5599.182840686523,
+      "Pd": 0.0
+    }
+  },
+  "validation": {
+    "status": "PASS",
+    "number_of_vessels": 29,
+    "number_of_junctions": 6,
+    "number_of_boundaries": 24,
+    "number_of_flow_inlets": 5,
+    "number_of_rcr_outlets": 19,
+    "exact_cfd_boundary_values": true,
+    "centerline_root": "cap_fontan_x",
+    "prescribed_inlet_mean_native_flow_ml_s": {
+      "cap_L_HV": -1.338883974110255,
+      "cap_M_HV": -2.169724572630345,
+      "cap_R_HV": -0.33944953786607,
+      "cap_fontan_x": -20.395034341197455,
+      "cap_rt_svc_x": -6.45572144487692
+    },
+    "total_mean_inward_prescribed_flow_ml_s": 30.698813870681043,
+    "mean_vessel_R_poiseuille": 7.333469777505423,
+    "mean_vessel_L": 2.032113522370677,
+    "mean_vessel_C": 1.0050784668340212e-07,
+    "baseline_solver": {
+      "status": "PASS",
+      "solver": "svzerodsolver",
+      "output_csv": "P15/rom/P15_0d_baseline.csv",
+      "number_of_rows": 51707,
+      "number_of_time_points_per_vessel": 1783,
+      "mean_root_inflow_ml_s": 20.394670039748167,
+      "mean_other_terminal_flow_ml_s": -10.303487086960047,
+      "mean_rcr_outflow_ml_s": 30.698152489226953,
+      "mean_external_flow_residual_ml_s": 4.637481257674381e-06,
+      "relative_external_flow_residual": 1.1369347422359672e-07
+    }
+  }
+}
