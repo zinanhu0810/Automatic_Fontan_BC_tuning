@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "message": "step size below min_step",
+  "objective": 0.023874457998890868,
+  "nfev": 205,
+  "active_parameters": [
+    "LA_Emax",
+    "LA_Epass",
+    "SV_Emax",
+    "SV_Epass",
+    "mitral_Rmin",
+    "mitral_Rmax",
+    "aortic_Rmin",
+    "aortic_Rmax"
+  ],
+  "multipliers": {
+    "LA_Emax": 0.5187931656538894,
+    "LA_Epass": 0.876998497358217,
+    "SV_Emax": 0.7046880897187134,
+    "SV_Epass": 1.0,
+    "mitral_Rmin": 1.4190675485932571,
+    "mitral_Rmax": 10.000000000000002,
+    "aortic_Rmin": 4.0,
+    "aortic_Rmax": 10.000000000000002
+  },
+  "best_objective_seen": 0.023874457998890868
+}

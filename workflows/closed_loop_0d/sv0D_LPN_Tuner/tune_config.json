@@ -1,0 +1,177 @@
+{
+  "description": "Automatic tuning setup for the full 0D sv0D Fontan LPN. Active parameters are optimized as log-multipliers relative to baseline_full0d.json.",
+  "solver": "svzerodsolver",
+  "baseline_json": "baseline_full0d.json",
+  "targets_json": "clinical_targets.json",
+  "work_dir": "runs_genbc_targets",
+  "simulation_overrides": {
+    "number_of_cardiac_cycles": 20,
+    "number_of_time_pts_per_cardiac_cycle": 250,
+    "cardiac_period": 0.666667,
+    "output_variable_based": true,
+    "output_all_cycles": false,
+    "steady_initial": false
+  },
+  "optimizer": {
+    "method": "pattern_search",
+    "maxiter": 80,
+    "initial_step": 0.35,
+    "min_step": 0.025,
+    "shrink": 0.5
+  },
+  "parameters": [
+    {
+      "name": "LA_Emax",
+      "group": "chamber",
+      "kind": "chamber",
+      "target": "left_atrium",
+      "field": "Emax",
+      "active": true,
+      "bounds_multiplier": [0.35, 2.5]
+    },
+    {
+      "name": "LA_Epass",
+      "group": "chamber",
+      "kind": "chamber",
+      "target": "left_atrium",
+      "field": "Epass",
+      "active": true,
+      "bounds_multiplier": [0.25, 2.5]
+    },
+    {
+      "name": "SV_Emax",
+      "group": "chamber",
+      "kind": "chamber",
+      "target": "left_ventricle",
+      "field": "Emax",
+      "active": true,
+      "bounds_multiplier": [0.20, 1.5]
+    },
+    {
+      "name": "SV_Epass",
+      "group": "chamber",
+      "kind": "chamber",
+      "target": "left_ventricle",
+      "field": "Epass",
+      "active": true,
+      "bounds_multiplier": [0.25, 3.0]
+    },
+    {
+      "name": "mitral_Rmin",
+      "group": "valve",
+      "kind": "valve",
+      "target": "mitral",
+      "field": "Rmin",
+      "active": true,
+      "bounds_multiplier": [0.25, 4.0]
+    },
+    {
+      "name": "mitral_Rmax",
+      "group": "valve",
+      "kind": "valve",
+      "target": "mitral",
+      "field": "Rmax",
+      "active": true,
+      "bounds_multiplier": [0.10, 10.0]
+    },
+    {
+      "name": "aortic_Rmin",
+      "group": "valve",
+      "kind": "valve",
+      "target": "aortic",
+      "field": "Rmin",
+      "active": true,
+      "bounds_multiplier": [0.25, 4.0]
+    },
+    {
+      "name": "aortic_Rmax",
+      "group": "valve",
+      "kind": "valve",
+      "target": "aortic",
+      "field": "Rmax",
+      "active": true,
+      "bounds_multiplier": [0.10, 10.0]
+    },
+    {
+      "name": "Fontan_R",
+      "group": "vascular_optional",
+      "kind": "vessel",
+      "target": "Fontan",
+      "field": "R_poiseuille",
+      "active": false,
+      "bounds_multiplier": [0.25, 4.0]
+    },
+    {
+      "name": "left_pul_art_R",
+      "group": "vascular_optional",
+      "kind": "vessel",
+      "target": "left_pul_art",
+      "field": "R_poiseuille",
+      "active": false,
+      "bounds_multiplier": [0.40, 2.5]
+    },
+    {
+      "name": "right_pul_art_R",
+      "group": "vascular_optional",
+      "kind": "vessel",
+      "target": "right_pul_art",
+      "field": "R_poiseuille",
+      "active": false,
+      "bounds_multiplier": [0.40, 2.5]
+    },
+    {
+      "name": "left_pul_cap_R",
+      "group": "vascular_optional",
+      "kind": "vessel",
+      "target": "left_pul_cap",
+      "field": "R_poiseuille",
+      "active": false,
+      "bounds_multiplier": [0.40, 2.5]
+    },
+    {
+      "name": "right_pul_cap_R",
+      "group": "vascular_optional",
+      "kind": "vessel",
+      "target": "right_pul_cap",
+      "field": "R_poiseuille",
+      "active": false,
+      "bounds_multiplier": [0.40, 2.5]
+    },
+    {
+      "name": "collateral_left_R",
+      "group": "vascular_optional",
+      "kind": "vessel",
+      "target": "collateral_left",
+      "field": "R_poiseuille",
+      "active": false,
+      "bounds_multiplier": [0.40, 2.5]
+    },
+    {
+      "name": "collateral_right_R",
+      "group": "vascular_optional",
+      "kind": "vessel",
+      "target": "collateral_right",
+      "field": "R_poiseuille",
+      "active": false,
+      "bounds_multiplier": [0.40, 2.5]
+    },
+    {
+      "name": "svc_R",
+      "group": "vascular_optional",
+      "kind": "vessel",
+      "target": "svc",
+      "field": "R_poiseuille",
+      "active": false,
+      "bounds_multiplier": [0.40, 2.5]
+    },
+    {
+      "name": "ivc_R",
+      "group": "vascular_optional",
+      "kind": "vessel",
+      "target": "ivc",
+      "field": "R_poiseuille",
+      "active": false,
+      "bounds_multiplier": [0.40, 2.5]
+    }
+  ]
+}

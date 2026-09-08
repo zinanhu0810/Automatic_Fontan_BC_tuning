@@ -1,0 +1,65 @@
+{
+  "description": "genBC-derived targets for full 0D Fontan sv0D tuning. Values are computed from the final cardiac cycle of ../sv0D_LPN/comparison_timeseries.csv. Flow targets are in L/min, pressure targets are in mmHg, volume targets are in mL.",
+  "targets": {
+    "SVSV_mL": {
+      "label": "single ventricle stroke volume",
+      "target": 37.84231317661764,
+      "weight": 4.0
+    },
+    "AO_L_min": {
+      "label": "aortic/cardiac output",
+      "target": 3.3947421859924525,
+      "weight": 3.0
+    },
+    "collateral_L_min": {
+      "label": "collateral flow",
+      "target": 0.71597952089899,
+      "weight": 2.0
+    },
+    "system_L_min": {
+      "label": "systemic flow, AO minus collateral",
+      "target": 2.6787626650934624,
+      "weight": 2.0
+    },
+    "IVC_L_min": {
+      "label": "IVC flow",
+      "target": 1.6910626403872437,
+      "weight": 1.5
+    },
+    "SVC_L_min": {
+      "label": "SVC flow",
+      "target": 0.9952652787804551,
+      "weight": 1.5
+    },
+    "pulmonary_L_fraction": {
+      "label": "left pulmonary flow fraction from genBC final cycle",
+      "target": 0.276538952318514,
+      "weight": 2.0
+    },
+    "Fontan_mean_mmHg": {
+      "label": "mean Fontan pressure",
+      "target": 10.278188666075476,
+      "weight": 2.0
+    },
+    "LA_mean_mmHg": {
+      "label": "mean LA pressure",
+      "target": 7.261350392347586,
+      "weight": 2.0
+    },
+    "LV_peak_mmHg": {
+      "label": "peak single-ventricle pressure",
+      "target": 112.54513576491053,
+      "weight": 3.0
+    },
+    "Aorta_peak_mmHg": {
+      "label": "aortic systolic pressure",
+      "target": 94.44010071524832,
+      "weight": 2.0
+    },
+    "Aorta_min_mmHg": {
+      "label": "aortic diastolic pressure",
+      "target": 62.41106057906264,
+      "weight": 2.0
+    }
+  }
+}
