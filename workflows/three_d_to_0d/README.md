@@ -34,15 +34,6 @@ The root cap only defines the orientation of the centerline tree. P15 uses
 RCRs to signed `FLOW` boundary conditions after ROM generation. All pulmonary
 RCR values are copied directly from the fluid equation in `solver.xml`.
 
-## Add another patient
-
-Place the patient's closed exterior surface, individual cap/wall surfaces,
-`solver.xml`, and waveform files in a patient directory. Add a
-`patient_0d_config.json` using P15 as the template, then run the same command.
-
-Use `--prepare-only` to inspect generated ROM inputs before centerline
-extraction. Use `--reuse-centerlines` after a successful first run to avoid
-recomputing centerlines while changing ROM parameters.
 
 ## Included validation and calibration
 
@@ -57,10 +48,3 @@ Re-running the 3D postprocessing or calibration requires raw svMultiPhysics
 output under `P15/steady/48-procs`. Those large files are intentionally outside
 the public repository; the derived summaries and calibrator observations are
 included for audit.
-
-## Current model boundary
-
-This step creates the untuned geometry-derived 0D network. It does not yet fit
-the vessel coefficients to the 3D pressure/flow waveforms or tune downstream
-boundary conditions. Those are separate calibration stages so geometry,
-3D-to-0D fitting, and physiological BC tuning remain independently auditable.
