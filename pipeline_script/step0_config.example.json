@@ -1,0 +1,19 @@
+{
+  "case_name": "PXX",
+  "mesh": {
+    "directory": "mesh",
+    "volume_file": "mesh-complete.mesh.vtu",
+    "surface_directory": "mesh-surfaces",
+    "cap_info_file": "cap_info.txt",
+    "minimum_wall_polygons": 10
+  },
+  "inlets": [
+    {"name": "cap_SVC", "flow_file": "cap_SVC.flow", "profile": "Parabolic"},
+    {"name": "cap_IVC", "flow_file": "cap_IVC.flow", "profile": "Parabolic"}
+  ],
+  "outlets": {"lpa": ["cap_LPA_1"], "rpa": ["cap_RPA_1"]},
+  "targets": {"mean_fontan_pressure_mmhg": 11.0, "lpa_fraction_percent": 50.0},
+  "metrics": {"fontan_pressure_face": "cap_SVC"},
+  "simulation": {"cardiac_period_s": 0.6667, "time_step_s": 0.0006667, "steps_per_cycle": 1000, "number_of_cycles": 8, "vtk_interval": 50},
+  "rcr": {"capacitance_s": 0.00015, "proximal_resistance_fraction": 0.0909090909}
+}
