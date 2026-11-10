@@ -1,0 +1,864 @@
+{
+  "simulation_parameters": {
+    "coupled_simulation": true,
+    "number_of_time_pts": 10,
+    "external_step_size": 0.000667,
+    "cardiac_period": 0.666667,
+    "output_variable_based": true,
+    "output_all_cycles": true,
+    "steady_initial": false
+  },
+  "vessels": [
+    {
+      "vessel_id": 1,
+      "vessel_length": 1.0,
+      "vessel_name": "aorta_arch",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 1.0,
+        "C": 0.0005442278860569715,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 101,
+      "vessel_length": 1.0,
+      "vessel_name": "upper_art",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 1015.174,
+        "C": 0.00017691154422788604,
+        "L": 0.808404
+      }
+    },
+    {
+      "vessel_id": 102,
+      "vessel_length": 1.0,
+      "vessel_name": "upper_cap",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 4259.462,
+        "C": 0.0023592203898050975,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 103,
+      "vessel_length": 1.0,
+      "vessel_name": "upper_vein",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 76.038,
+        "C": 0.0,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 104,
+      "vessel_length": 1.0,
+      "vessel_name": "svc_0d",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 10.1384,
+        "C": 0.0007703898050974513,
+        "L": 6.883439999999999
+      }
+    },
+    {
+      "vessel_id": 2,
+      "vessel_length": 1.0,
+      "vessel_name": "aorta_th",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 62.698,
+        "C": 0.00013290854572713644,
+        "L": 2.4012
+      }
+    },
+    {
+      "vessel_id": 4,
+      "vessel_length": 1.0,
+      "vessel_name": "aorta_ab",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 861.764,
+        "C": 0.00022488755622188905,
+        "L": 2.4012
+      }
+    },
+    {
+      "vessel_id": 301,
+      "vessel_length": 1.0,
+      "vessel_name": "leg_art",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 1239.286,
+        "C": 0.0011865817091454272,
+        "L": 2.4012
+      }
+    },
+    {
+      "vessel_id": 302,
+      "vessel_length": 1.0,
+      "vessel_name": "leg_cap",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 3148.24,
+        "C": 0.005399700149925037,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 303,
+      "vessel_length": 1.0,
+      "vessel_name": "leg_vein",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 731.032,
+        "C": 0.004874062968515742,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 5,
+      "vessel_length": 1.0,
+      "vessel_name": "ivc_ab",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 4.1354,
+        "C": 0.0,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 304,
+      "vessel_length": 1.0,
+      "vessel_name": "liver_art",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 17684.838,
+        "C": 0.003313343328335832,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 305,
+      "vessel_length": 1.0,
+      "vessel_name": "liver_vein",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 60.03,
+        "C": 0.0,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 306,
+      "vessel_length": 1.0,
+      "vessel_name": "kid_art",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 12274.134,
+        "C": 0.0013718140929535232,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 307,
+      "vessel_length": 1.0,
+      "vessel_name": "kid_vein",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 1171.252,
+        "C": 0.0,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 308,
+      "vessel_length": 1.0,
+      "vessel_name": "int_art",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 24811.066,
+        "C": 0.0007421289355322339,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 309,
+      "vessel_length": 1.0,
+      "vessel_name": "int_vein",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 190.76199999999997,
+        "C": 0.0,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 310,
+      "vessel_length": 1.0,
+      "vessel_name": "ivc_0d",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 4.002,
+        "C": 0.0005450674662668666,
+        "L": 6.883439999999999
+      }
+    },
+    {
+      "vessel_id": 201,
+      "vessel_length": 1.0,
+      "vessel_name": "left_pul_art",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 97.38199999999999,
+        "C": 0.0006248125937031485,
+        "L": 3.02818
+      }
+    },
+    {
+      "vessel_id": 202,
+      "vessel_length": 1.0,
+      "vessel_name": "left_pul_cap",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 161.414,
+        "C": 0.0011922038980509745,
+        "L": 2.04102
+      }
+    },
+    {
+      "vessel_id": 203,
+      "vessel_length": 1.0,
+      "vessel_name": "left_pul_vein",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 45.356,
+        "C": 0.0,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 205,
+      "vessel_length": 1.0,
+      "vessel_name": "right_pul_cap",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 74.29046000000001,
+        "C": 0.001386431784107946,
+        "L": 2.04102
+      }
+    },
+    {
+      "vessel_id": 206,
+      "vessel_length": 1.0,
+      "vessel_name": "right_pul_vein",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 19.19626,
+        "C": 0.0,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 401,
+      "vessel_length": 1.0,
+      "vessel_name": "collateral_left",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 15036.848,
+        "C": 0.0,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 402,
+      "vessel_length": 1.0,
+      "vessel_name": "collateral_right",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 15036.848,
+        "C": 0.0,
+        "L": 0.0
+      }
+    },
+    {
+      "vessel_id": 2041,
+      "vessel_length": 1.0,
+      "vessel_name": "right_pul_art_rpa",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 57.167458333333336,
+        "C": 0.00036136731634182906,
+        "L": 6.308708333333334
+      }
+    },
+    {
+      "vessel_id": 2042,
+      "vessel_length": 1.0,
+      "vessel_name": "right_pul_art_rpa2",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 211.07984615384615,
+        "C": 9.787031484257872e-05,
+        "L": 23.293692307692307
+      }
+    },
+    {
+      "vessel_id": 2043,
+      "vessel_length": 1.0,
+      "vessel_name": "right_pul_art_rpa3",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 182.93586666666667,
+        "C": 0.00011292728635682158,
+        "L": 20.187866666666668
+      }
+    },
+    {
+      "vessel_id": 2044,
+      "vessel_length": 1.0,
+      "vessel_name": "right_pul_art_rpa4",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 161.414,
+        "C": 0.00012798425787106447,
+        "L": 17.812823529411762
+      }
+    },
+    {
+      "vessel_id": 2045,
+      "vessel_length": 1.0,
+      "vessel_name": "right_pul_art_rpa5",
+      "zero_d_element_type": "BloodVessel",
+      "zero_d_element_values": {
+        "R_poiseuille": 392.0054285714285,
+        "C": 5.269940029985008e-05,
+        "L": 43.25971428571428
+      }
+    }
+  ],
+  "external_solver_coupling_blocks": [
+    {
+      "name": "lpa",
+      "type": "FLOW",
+      "location": "inlet",
+      "connected_block": "left_pul_art",
+      "periodic": false,
+      "values": {
+        "t": [
+          0.0,
+          1.0
+        ],
+        "Q": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "rpa",
+      "type": "FLOW",
+      "location": "inlet",
+      "connected_block": "right_pul_art_rpa",
+      "periodic": false,
+      "values": {
+        "t": [
+          0.0,
+          1.0
+        ],
+        "Q": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "rpa2",
+      "type": "FLOW",
+      "location": "inlet",
+      "connected_block": "right_pul_art_rpa2",
+      "periodic": false,
+      "values": {
+        "t": [
+          0.0,
+          1.0
+        ],
+        "Q": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "rpa3",
+      "type": "FLOW",
+      "location": "inlet",
+      "connected_block": "right_pul_art_rpa3",
+      "periodic": false,
+      "values": {
+        "t": [
+          0.0,
+          1.0
+        ],
+        "Q": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "rpa4",
+      "type": "FLOW",
+      "location": "inlet",
+      "connected_block": "right_pul_art_rpa4",
+      "periodic": false,
+      "values": {
+        "t": [
+          0.0,
+          1.0
+        ],
+        "Q": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "rpa5",
+      "type": "FLOW",
+      "location": "inlet",
+      "connected_block": "right_pul_art_rpa5",
+      "periodic": false,
+      "values": {
+        "t": [
+          0.0,
+          1.0
+        ],
+        "Q": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "ivc",
+      "type": "FLOW",
+      "location": "outlet",
+      "connected_block": "ivc_0d",
+      "periodic": false,
+      "values": {
+        "t": [
+          0.0,
+          1.0
+        ],
+        "Q": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "svc",
+      "type": "FLOW",
+      "location": "outlet",
+      "connected_block": "svc_0d",
+      "periodic": false,
+      "values": {
+        "t": [
+          0.0,
+          1.0
+        ],
+        "Q": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "junctions": [
+    {
+      "junction_name": "J3",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        1
+      ],
+      "outlet_vessels": [
+        101,
+        2
+      ]
+    },
+    {
+      "junction_name": "J10",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        101
+      ],
+      "outlet_vessels": [
+        102
+      ]
+    },
+    {
+      "junction_name": "J11",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        102
+      ],
+      "outlet_vessels": [
+        103
+      ]
+    },
+    {
+      "junction_name": "J12",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        103
+      ],
+      "outlet_vessels": [
+        104
+      ]
+    },
+    {
+      "junction_name": "J13",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        2
+      ],
+      "outlet_vessels": [
+        304,
+        306,
+        4,
+        401,
+        402
+      ]
+    },
+    {
+      "junction_name": "J37",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        4
+      ],
+      "outlet_vessels": [
+        308,
+        301
+      ]
+    },
+    {
+      "junction_name": "J31",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        301
+      ],
+      "outlet_vessels": [
+        302
+      ]
+    },
+    {
+      "junction_name": "J32",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        302
+      ],
+      "outlet_vessels": [
+        303
+      ]
+    },
+    {
+      "junction_name": "J38",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        303
+      ],
+      "outlet_vessels": [
+        5
+      ]
+    },
+    {
+      "junction_name": "J35",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        308
+      ],
+      "outlet_vessels": [
+        309
+      ]
+    },
+    {
+      "junction_name": "J33",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        304,
+        309
+      ],
+      "outlet_vessels": [
+        305
+      ]
+    },
+    {
+      "junction_name": "J34",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        306
+      ],
+      "outlet_vessels": [
+        307
+      ]
+    },
+    {
+      "junction_name": "J36",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        5,
+        305,
+        307
+      ],
+      "outlet_vessels": [
+        310
+      ]
+    },
+    {
+      "junction_name": "J20",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        201
+      ],
+      "outlet_vessels": [
+        202
+      ]
+    },
+    {
+      "junction_name": "J21",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        202,
+        401
+      ],
+      "outlet_vessels": [
+        203
+      ]
+    },
+    {
+      "junction_name": "J23",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        205,
+        402
+      ],
+      "outlet_vessels": [
+        206
+      ]
+    },
+    {
+      "junction_name": "J2",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_blocks": [
+        "left_pul_vein",
+        "right_pul_vein"
+      ],
+      "outlet_blocks": [
+        "left_atrium"
+      ]
+    },
+    {
+      "junction_name": "J22",
+      "junction_type": "NORMAL_JUNCTION",
+      "inlet_vessels": [
+        2041,
+        2042,
+        2043,
+        2044,
+        2045
+      ],
+      "outlet_vessels": [
+        205
+      ]
+    }
+  ],
+  "boundary_conditions": [],
+  "chambers": [
+    {
+      "type": "LinearElastanceChamber",
+      "name": "left_atrium",
+      "values": {
+        "Emax": 213.56947583517484,
+        "Epass": 152.39917858934152,
+        "Vrest": 0.0
+      },
+      "activation_function": {
+        "type": "piecewise_cosine",
+        "contract_start": 0.54336693835,
+        "relax_start": 0.6407169870250001,
+        "contract_duration": 0.09735004867500001,
+        "relax_duration": 0.09735004867500001
+      }
+    },
+    {
+      "type": "LinearElastanceChamber",
+      "name": "left_ventricle",
+      "values": {
+        "Emax": 3332.4461142117657,
+        "Epass": 131.84801016278402,
+        "Vrest": 0.0
+      },
+      "activation_function": {
+        "type": "piecewise_cosine",
+        "contract_start": 0.65400449366875,
+        "relax_start": 0.7757101240772303,
+        "contract_duration": 0.12170563040848034,
+        "relax_duration": 0.06823196456026964
+      }
+    }
+  ],
+  "valves": [
+    {
+      "type": "PiecewiseValve",
+      "name": "mitral",
+      "params": {
+        "Rmax": 6665.0,
+        "Rmin": 6.665,
+        "upstream_block": "left_atrium",
+        "downstream_block": "left_ventricle"
+      }
+    },
+    {
+      "type": "PiecewiseValve",
+      "name": "aortic",
+      "params": {
+        "Rmax": 6665.0,
+        "Rmin": 6.665,
+        "upstream_block": "left_ventricle",
+        "downstream_block": "aorta_arch"
+      }
+    }
+  ],
+  "initial_condition": {
+    "Vc:left_atrium": 72.11296,
+    "Vc:left_ventricle": 43.582,
+    "flow:J2:left_atrium": -107.1705554049344,
+    "flow:left_atrium:mitral": 0.0,
+    "flow:mitral:left_ventricle": 0.0,
+    "flow:left_ventricle:aortic": 0.0,
+    "flow:aortic:aorta_arch": 0.0,
+    "flow:aorta_arch:J3": 66.73713000000001,
+    "flow:J3:upper_art": 39.37003,
+    "flow:J3:aorta_th": 27.3671,
+    "flow:upper_art:J10": 39.37003,
+    "flow:J10:upper_cap": 13.506044472283119,
+    "flow:upper_cap:J11": 13.506044472283119,
+    "flow:J11:upper_vein": -0.41842105263156987,
+    "flow:upper_vein:J12": -0.41842105263156987,
+    "flow:J12:svc_0d": 15.0,
+    "flow:svc_0d:svc": 15.0,
+    "flow:aorta_th:J13": 27.3671,
+    "flow:J13:aorta_ab": 24.2435,
+    "flow:aorta_ab:J37": 24.2435,
+    "flow:J37:leg_art": 10.50352,
+    "flow:leg_art:J31": 10.50352,
+    "flow:J31:leg_cap": 11.204491525423729,
+    "flow:leg_cap:J32": 11.204491525423729,
+    "flow:J32:leg_vein": 10.848211678832119,
+    "flow:leg_vein:J38": 10.848211678832119,
+    "flow:J38:ivc_ab": 5.712903225806202,
+    "flow:ivc_ab:J36": 5.712903225806202,
+    "flow:J13:liver_art": 4.675219129516481,
+    "flow:liver_art:J33": 4.675219129516481,
+    "flow:liver_vein:J36": -11.786888888888885,
+    "flow:J33:liver_vein": -11.786888888888885,
+    "flow:J13:kid_art": 6.306344962504075,
+    "flow:kid_art:J34": 6.306344962504075,
+    "flow:J34:kid_vein": 3.90010250569476,
+    "flow:kid_vein:J36": 3.90010250569476,
+    "flow:J37:int_art": 2.3444905640088174,
+    "flow:int_art:J35": 2.3444905640088174,
+    "flow:J35:int_vein": -1.8486713286713283,
+    "flow:int_vein:J33": -1.8486713286713283,
+    "flow:J36:ivc_0d": 26.0,
+    "flow:ivc_0d:ivc": 26.0,
+    "flow:left_pul_art:J20": 10.724361,
+    "flow:J20:left_pul_cap": 14.955302,
+    "flow:left_pul_cap:J21": 14.955302,
+    "flow:J21:left_pul_vein": 2.06882352941176,
+    "flow:left_pul_vein:J2": 2.06882352941176,
+    "flow:right_pul_cap:J23": 10.000172,
+    "flow:J23:right_pul_vein": -10.490965948575354,
+    "flow:right_pul_vein:J2": -10.490965948575354,
+    "flow:J13:collateral_left": 5.675833924769339,
+    "flow:collateral_left:J21": 5.675833924769339,
+    "flow:J13:collateral_right": 5.6954670865862305,
+    "flow:collateral_right:J23": 5.6954670865862305,
+    "pressure:aorta_arch:J3": 113272.16778,
+    "pressure:J3:upper_art": 113272.16778,
+    "pressure:J10:upper_cap": 74029.3962,
+    "pressure:J11:upper_vein": 16500.913,
+    "pressure:J12:svc_0d": 16532.7289,
+    "pressure:svc_0d:svc": 16342.5005,
+    "pressure:aorta_th:J13": 98780.48556,
+    "pressure:J13:aorta_ab": 98780.48556,
+    "pressure:aorta_ab:J37": 73916.64652,
+    "pressure:J37:leg_art": 73916.64652,
+    "pressure:J31:leg_cap": 60036.003,
+    "pressure:J32:leg_vein": 24761.574600000004,
+    "pressure:J38:ivc_ab": 16831.18472,
+    "pressure:ivc_ab:J36": 16807.55958,
+    "pressure:J13:liver_art": 98780.48556,
+    "pressure:J33:liver_vein": 16099.99264,
+    "pressure:liver_vein:J36": 16807.55958,
+    "pressure:J13:kid_art": 98780.48556,
+    "pressure:J34:kid_vein": 21375.562439999998,
+    "pressure:kid_vein:J36": 16807.55958,
+    "pressure:J37:int_art": 73916.64652,
+    "pressure:J35:int_vein": 15747.3364,
+    "pressure:int_vein:J33": 16099.99264,
+    "pressure:J36:ivc_0d": 16807.55958,
+    "pressure:ivc_0d:ivc": 16342.5005,
+    "pressure:left_pul_art:J20": 15334.14324,
+    "pressure:J20:left_pul_cap": 15334.14324,
+    "pressure:left_pul_cap:J21": 13433.83356,
+    "pressure:J21:left_pul_vein": 13433.83356,
+    "pressure:left_pul_vein:J2": 13433.83356,
+    "pressure:right_pul_cap:J23": 13138.612690000002,
+    "pressure:J23:right_pul_vein": 13138.612690000002,
+    "pressure:right_pul_vein:J2": 13138.612690000002,
+    "pressure:J2:left_atrium": 14671.895167367553,
+    "pressure:left_atrium:mitral": 14671.895167367553,
+    "pressure:mitral:left_ventricle": 9438.747484956473,
+    "pressure:left_ventricle:aortic": 9438.747484956473,
+    "pressure:aortic:aorta_arch": 113272.16778,
+    "pressure:J13:collateral_left": 98780.48556,
+    "pressure:collateral_left:J21": 13433.83356,
+    "pressure:J13:collateral_right": 98780.48556,
+    "pressure:collateral_right:J23": 13138.612690000002,
+    "flow:lpa:left_pul_art": 10.724361,
+    "pressure:lpa:left_pul_art": 16342.5005,
+    "flow:rpa:right_pul_art_rpa": 5.66833632,
+    "flow:right_pul_art_rpa:J22": 5.66833632,
+    "pressure:rpa:right_pul_art_rpa": 16342.5005,
+    "pressure:right_pul_art_rpa:J22": 14751.465380000001,
+    "flow:rpa2:right_pul_art_rpa2": 1.5351744200000002,
+    "flow:right_pul_art_rpa2:J22": 1.5351744200000002,
+    "pressure:rpa2:right_pul_art_rpa2": 16342.5005,
+    "pressure:right_pul_art_rpa2:J22": 14751.465380000001,
+    "flow:rpa3:right_pul_art_rpa3": 1.7713551,
+    "flow:right_pul_art_rpa3:J22": 1.7713551,
+    "pressure:rpa3:right_pul_art_rpa3": 16342.5005,
+    "pressure:right_pul_art_rpa3:J22": 14751.465380000001,
+    "flow:rpa4:right_pul_art_rpa4": 2.0075357800000004,
+    "flow:right_pul_art_rpa4:J22": 2.0075357800000004,
+    "pressure:rpa4:right_pul_art_rpa4": 16342.5005,
+    "pressure:right_pul_art_rpa4:J22": 14751.465380000001,
+    "flow:rpa5:right_pul_art_rpa5": 0.8266323800000002,
+    "flow:right_pul_art_rpa5:J22": 0.8266323800000002,
+    "pressure:rpa5:right_pul_art_rpa5": 16342.5005,
+    "pressure:right_pul_art_rpa5:J22": 14751.465380000001
+  },
+  "_notes": {
+    "source_parent": "sv0D_LPN/Fontan_genBC_1to1_sv0D.json",
+    "source_3d_xml": "passive_fluid_truncate/svFSI.xml",
+    "replacement": "The 0D Fontan/SVC-IVC/PA coupling region is replaced by the 3D domain. External FLOW blocks are named to match svFSI face names: lpa, rpa, rpa2, rpa3, rpa4, rpa5, ivc, svc.",
+    "rpa_split": "Right PA outlet blocks use the genBC split fractions rpa=0.48, rpa2=0.13, rpa3=0.15, rpa4=0.17, rpa5=0.07. Branch R and L are divided by split, branch C is multiplied by split.",
+    "solver_schema": "Uses LinearElastanceChamber and PiecewiseValve to match the requested older sv0D schema.",
+    "heart_timing": "Chamber activation functions and cardiac_period are copied from the latest standalone 0D parent JSON."
+  }
+}
