@@ -1,0 +1,42 @@
+{
+  "source_model": "/Users/zinanhu/Desktop/Automatic_Fontan_Tuning/P3_BC_tuning_pipeline/03_calibrate_0d/unsteady/P3_0d_calibrated.json",
+  "method": "bounded two-parameter Nelder-Mead RCR tuning",
+  "targets": {
+    "mean_fontan_pressure_mmHg": 9.0,
+    "lpa_flow_fraction": 0.536,
+    "rpa_flow_fraction": 0.464,
+    "mean_fontan_pressure_relative_tolerance": 0.05,
+    "pulmonary_flow_relative_tolerance": 0.05
+  },
+  "baseline": {
+    "mean_fontan_pressure_mmHg": 9.961421105928112,
+    "mean_lpa_flow_ml_s": 34.084158037421865,
+    "mean_rpa_flow_ml_s": 30.99332355432399,
+    "lpa_flow_fraction": 0.5237473424562414,
+    "rpa_flow_fraction": 0.47625265754375856
+  },
+  "tuned": {
+    "mean_fontan_pressure_mmHg": 8.983959679942902,
+    "mean_lpa_flow_ml_s": 35.34112183971557,
+    "mean_rpa_flow_ml_s": 29.73635975203029,
+    "lpa_flow_fraction": 0.5430622232959624,
+    "rpa_flow_fraction": 0.4569377767040377
+  },
+  "best_objective": 0.0001767778778517878,
+  "scales": {
+    "common_rcr_resistance_scale": 0.892648840006021,
+    "lpa_rcr_resistance_scale": 0.8526921584201221,
+    "rpa_rcr_resistance_scale": 0.9344778695285009
+  },
+  "relative_errors": {
+    "mean_fontan_pressure": 0.0017822577841219989,
+    "mean_lpa_flow": 0.01317578973127298,
+    "mean_rpa_flow": 0.015220308827505025
+  },
+  "number_of_solver_evaluations": 22,
+  "acceptance": {
+    "fontan_pressure": true,
+    "lpa_flow": true,
+    "rpa_flow": true
+  }
+}

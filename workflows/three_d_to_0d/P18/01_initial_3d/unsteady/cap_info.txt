@@ -1,0 +1,9 @@
+#Face_Name	Area
+cap_AZG	1.90856
+cap_HV_L	0.41685
+cap_HV_R	0.759321
+cap_fontan_x	1.07866
+cap_lt_brach_x	1.50972
+cap_pa_x	1.26763
+cap_pa_x_2	1.08181
+cap_rt_svc_x	0.722329

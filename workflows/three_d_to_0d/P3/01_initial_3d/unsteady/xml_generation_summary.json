@@ -1,0 +1,45 @@
+{
+  "target_mean_fontan_pressure_mmhg": 9.0,
+  "target_lpa_fraction_percent": 53.6,
+  "target_rpa_fraction_percent": 46.4,
+  "heart_rate_bpm": 66.0,
+  "time_step_s": 0.0009091,
+  "steps_per_cardiac_cycle": 1000,
+  "cardiac_period_s": 0.9091,
+  "number_of_cycles": 8,
+  "total_time_steps": 8000,
+  "total_mean_inflow_ml_s": 65.07858012514728,
+  "inlet_mean_flows_ml_s": {
+    "cap_Fontan": -31.861154609647897,
+    "cap_HV_L": -2.737429374235931,
+    "cap_HV_M": -2.6685214484691673,
+    "cap_HV_R": -4.148859203472638,
+    "cap_SVC": -23.66261548932165
+  },
+  "lpa_outlets": [
+    "cap_LPA_1",
+    "cap_LPA_2",
+    "cap_LPA_3",
+    "cap_LPA_4",
+    "cap_LPA_5",
+    "cap_LPA_6",
+    "cap_LPA_7",
+    "cap_LPA_8",
+    "cap_PA_main_2"
+  ],
+  "rpa_outlets": [
+    "cap_RPA_1",
+    "cap_RPA_2",
+    "cap_RPA_3",
+    "cap_RPA_4",
+    "cap_RPA_5",
+    "cap_RPA_6",
+    "cap_RPA_7",
+    "cap_RPA_8",
+    "cap_PA_main"
+  ],
+  "rcr_capacitance_s": 0.00015,
+  "rcr_initial_pressure_dyn_cm2": 11998.8,
+  "equivalent_lpa_resistance_dyn_s_cm5": 343.98139683554945,
+  "equivalent_rpa_resistance_dyn_s_cm5": 397.35782048244505
+}

@@ -1,0 +1,25 @@
+# P18 initial unsteady 3D simulation inputs
+# Pressure is in mmHg; pulmonary fractions are percentages of total pulmonary flow.
+
+target_mean_fontan_pressure_mmhg = 10.0
+target_lpa_fraction_percent = 52.79
+target_rpa_fraction_percent = 47.21
+
+heart_rate_bpm = 90.0
+time_step_s = 0.0006667
+steps_per_cardiac_cycle = 1000
+cardiac_period_s = 0.6667
+number_of_cardiac_cycles = 8
+total_time_steps = 8000
+
+# The supplied waveform time coordinate spans 1.0 s. The solver uses generated
+# cap_*_physical.flow copies rescaled to this 0.6667 s cardiac period.
+inflow_time_column = physical_seconds
+
+# Area-based RCR initialization used for the first 3D CFD run.
+rcr_capacitance_s = 1.5e-4
+rcr_initial_pressure_dyn_cm2 = 13332.0
+
+# Measured-flow topology: cap_pa_x is LPA and cap_pa_x_2 is RPA.
+lpa_outlets = cap_pa_x
+rpa_outlets = cap_pa_x_2

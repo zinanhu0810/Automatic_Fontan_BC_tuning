@@ -1,0 +1,7 @@
+{
+  "mean_fontan_pressure_mmHg": 10.0,
+  "lpa_flow_fraction": 0.5279,
+  "rpa_flow_fraction": 0.4721,
+  "mean_fontan_pressure_relative_tolerance": 0.05,
+  "pulmonary_flow_relative_tolerance": 0.05
+}

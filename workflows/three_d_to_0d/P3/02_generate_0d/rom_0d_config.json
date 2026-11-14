@@ -1,0 +1,22 @@
+{
+  "case_name": "P3",
+  "solver_xml": "../01_initial_3d/unsteady/solver.xml",
+  "surface_model": "../01_initial_3d/unsteady/mesh/mesh-complete.exterior.vtp",
+  "boundary_surfaces_directory": "../01_initial_3d/unsteady/mesh/mesh-surfaces",
+  "root_surface": "cap_Fontan",
+  "output_directory": "rom",
+  "units": "cm",
+  "wall_surface_prefixes": ["wall"],
+  "rom_options": {
+    "material_model": "OLUFSEN",
+    "element_size": 0.01,
+    "min_num_elements": 5,
+    "seg_min_num": 1,
+    "seg_size": 9999,
+    "olufsen_material_k1": 0.0,
+    "olufsen_material_k2": -22.5267,
+    "olufsen_material_k3": 10000000.0,
+    "olufsen_material_exp": 1.0,
+    "olufsen_material_pressure": 0.0
+  }
+}

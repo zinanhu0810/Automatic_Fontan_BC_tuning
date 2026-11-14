@@ -1,0 +1,43 @@
+{
+  "target_mean_fontan_pressure_mmhg": 10.0,
+  "target_lpa_fraction_percent": 52.79,
+  "target_rpa_fraction_percent": 47.21,
+  "heart_rate_bpm": 90.0,
+  "time_step_s": 0.0006667,
+  "steps_per_cardiac_cycle": 1000,
+  "cardiac_period_s": 0.6667,
+  "number_of_cycles": 8,
+  "total_time_steps": 8000,
+  "source_waveform_duration_s": 1.0,
+  "total_mean_inflow_ml_s": 54.24028270804437,
+  "inlet_mean_flows_ml_s": {
+    "cap_AZG": -23.594747833874713,
+    "cap_HV_L": -1.141453134688615,
+    "cap_HV_R": -3.229591170067645,
+    "cap_fontan_x": -4.62937757448666,
+    "cap_lt_brach_x": -13.810191997919839,
+    "cap_rt_svc_x": -7.8349209970069
+  },
+  "lpa_outlets": [
+    "cap_pa_x"
+  ],
+  "rpa_outlets": [
+    "cap_pa_x_2"
+  ],
+  "rcr_capacitance_s": 0.00015,
+  "rcr_initial_pressure_dyn_cm2": 13332.0,
+  "equivalent_lpa_resistance_dyn_s_cm5": 465.6093560352121,
+  "equivalent_rpa_resistance_dyn_s_cm5": 520.6421924401366,
+  "excluded_wall_fragments": [
+    "walls_combined_connected_region_1.vtp"
+  ],
+  "included_wall_surface": "walls_combined_connected_region_0.vtp",
+  "inflow_files": {
+    "cap_AZG": "cap_AZG_physical.flow",
+    "cap_HV_L": "cap_HV_L_physical.flow",
+    "cap_HV_R": "cap_HV_R_physical.flow",
+    "cap_fontan_x": "cap_fontan_x_physical.flow",
+    "cap_lt_brach_x": "cap_lt_brach_x_physical.flow",
+    "cap_rt_svc_x": "cap_rt_svc_x_physical.flow"
+  }
+}

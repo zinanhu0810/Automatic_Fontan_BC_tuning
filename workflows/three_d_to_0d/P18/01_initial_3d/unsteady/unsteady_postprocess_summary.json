@@ -1,0 +1,57 @@
+{
+  "result_directory": "/Users/zinanhu/Desktop/Automatic_Fontan_Tuning/P18_BC_tuning_pipeline/01_initial_3d/unsteady/48-procs",
+  "final_cycle_first_step": 7001,
+  "final_cycle_last_step": 8000,
+  "final_cycle_duration_s": 0.6660332999999996,
+  "mean_fontan_pressure_mmHg": 11.005850803057259,
+  "min_fontan_pressure_mmHg": 9.762128400414035,
+  "max_fontan_pressure_mmHg": 12.05529080271823,
+  "fontan_pressure_amplitude_mmHg": 2.293162402304196,
+  "mean_lpa_flow_ml_s": 28.489748562706,
+  "mean_rpa_flow_ml_s": 25.802929854971,
+  "mean_pulmonary_flow_ml_s": 54.292678417677,
+  "lpa_split_percent": 52.474384010920524,
+  "rpa_split_percent": 47.525615989079476,
+  "prescribed_total_mean_inflow_ml_s": 54.24028270804437,
+  "target_lpa_flow_ml_s": 28.633445241576624,
+  "target_rpa_flow_ml_s": 25.606837466467745,
+  "mean_open_boundary_flow_sum_ml_s": 0.05239571031200567,
+  "acceptance_criteria": {
+    "mean_fontan_pressure_relative_tolerance": 0.05,
+    "mean_lpa_flow_relative_tolerance": 0.05,
+    "mean_rpa_flow_relative_tolerance": 0.05
+  },
+  "clinical_comparison": [
+    {
+      "metric": "Mean Fontan pressure",
+      "current": 11.005850803057259,
+      "target": 10.0,
+      "units": "mmHg",
+      "difference": 1.0058508030572586,
+      "relative_error": 0.10058508030572577,
+      "tolerance": 0.05,
+      "status": "FAIL"
+    },
+    {
+      "metric": "Mean LPA flow",
+      "current": 28.489748562706,
+      "target": 28.633445241576624,
+      "units": "mL/s",
+      "difference": -0.1436966788706222,
+      "relative_error": 0.0050184907075719876,
+      "tolerance": 0.05,
+      "status": "PASS"
+    },
+    {
+      "metric": "Mean RPA flow",
+      "current": 25.802929854971,
+      "target": 25.606837466467745,
+      "units": "mL/s",
+      "difference": 0.1960923885032564,
+      "relative_error": 0.007657813611698039,
+      "tolerance": 0.05,
+      "status": "PASS"
+    }
+  ],
+  "last_available_step": 8000
+}

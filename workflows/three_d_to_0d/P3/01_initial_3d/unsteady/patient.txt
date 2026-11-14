@@ -1,0 +1,21 @@
+# P3 initial unsteady 3D simulation inputs
+# Pressure is in mmHg; pulmonary fractions are percentages of total pulmonary flow.
+
+target_mean_fontan_pressure_mmhg = 9.0
+target_lpa_fraction_percent = 53.6
+target_rpa_fraction_percent = 46.4
+
+heart_rate_bpm = 66.0
+time_step_s = 0.0009091
+steps_per_cardiac_cycle = 1000
+cardiac_period_s = 0.9091
+number_of_cardiac_cycles = 8
+total_time_steps = 8000
+
+# Area-based RCR initialization used for the first 3D CFD run.
+rcr_capacitance_s = 1.5e-4
+rcr_initial_pressure_dyn_cm2 = 11998.8
+
+# Pulmonary outlet topology. cap_PA_main_2 is LPA; cap_PA_main is RPA.
+lpa_outlets = cap_LPA_1, cap_LPA_2, cap_LPA_3, cap_LPA_4, cap_LPA_5, cap_LPA_6, cap_LPA_7, cap_LPA_8, cap_PA_main_2
+rpa_outlets = cap_RPA_1, cap_RPA_2, cap_RPA_3, cap_RPA_4, cap_RPA_5, cap_RPA_6, cap_RPA_7, cap_RPA_8, cap_PA_main

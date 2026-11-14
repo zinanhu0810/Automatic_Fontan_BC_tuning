@@ -1,0 +1,41 @@
+{
+  "target_source": "/Users/zinanhu/Desktop/Automatic_Fontan_Tuning/P1_BC_tuning_pipeline/01_initial_3d/unsteady/48-procs",
+  "calibration_method": "verified local response scan; vessel-only fit against final 3D cycle",
+  "parameters": {
+    "global_vessel_resistance_scale": 9.4,
+    "lpa_to_rpa_terminal_resistance_scale": 1.005,
+    "global_vessel_inductance_scale": 1.221,
+    "geometric_vessel_capacitance": 0.0,
+    "boundary_conditions_preserved": true
+  },
+  "baseline": {
+    "mean_fontan_pressure_mmHg": 11.037700313797302,
+    "fontan_pressure_amplitude_mmHg": 1.326598678102373,
+    "min_fontan_pressure_mmHg": 10.36932119762533,
+    "max_fontan_pressure_mmHg": 11.695919875727704,
+    "mean_lpa_flow_ml_s": 23.909710143882698,
+    "mean_rpa_flow_ml_s": 25.962846809842173,
+    "lpa_split_fraction": 0.4794161680153625,
+    "rpa_split_fraction": 0.5205838319846375
+  },
+  "calibrated": {
+    "mean_fontan_pressure_mmHg": 11.358533622310722,
+    "fontan_pressure_amplitude_mmHg": 1.504173225195931,
+    "min_fontan_pressure_mmHg": 10.5926642213354,
+    "max_fontan_pressure_mmHg": 12.096837446531332,
+    "mean_lpa_flow_ml_s": 23.812777255447482,
+    "mean_rpa_flow_ml_s": 26.05977969827739,
+    "lpa_split_fraction": 0.4774725562505766,
+    "rpa_split_fraction": 0.5225274437494235
+  },
+  "objective": 6.022613347884717e-07,
+  "evaluations": "verified local response scan",
+  "acceptance_criterion": {
+    "relative_error_tolerance": 0.001
+  },
+  "acceptance": {
+    "mean_fontan_pressure_mmHg": true,
+    "lpa_split_fraction": true,
+    "fontan_pressure_amplitude_mmHg": true
+  }
+}
