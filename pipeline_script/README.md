@@ -189,3 +189,62 @@ It writes `calibrated_0d/CASE_0d_calibrated.json`, a concise Markdown summary,
 and a final-cycle 3D-vs-0D Fontan-pressure overlay. Candidate solver CSV files
 are temporary and are not kept. The acceptance criterion is `0.1%` relative
 error for each fitted metric.
+
+# Step 3: Tune Terminal Boundary Conditions in 0D
+
+[`tune_rcr_bc.py`](tune_rcr_bc.py) uses the calibrated 0D model to tune the
+terminal pulmonary RCR or resistance boundary conditions to the clinical targets
+in `step0_config.json`. It adjusts a common terminal-resistance scale and an
+LPA/RPA resistance-balance scale. Prescribed inflows, distal pressures, and the
+calibrated geometric vessel parameters remain unchanged.
+
+The input is the case directory and the calibrated Step 2 model:
+
+```bash
+python3 pipeline_script/tune_rcr_bc.py CASE_DIR \
+  --model calibrated_0d/CASE_0d_calibrated.json
+```
+
+The script requires `svzerodsolver` to be available on `PATH`; otherwise pass
+its location explicitly with `--svzerodsolver /path/to/svzerodsolver`.
+
+It creates:
+
+```text
+CASE_DIR/
+  tuned_bc/
+    CASE_0d_tuned_bc.json
+    CASE_0d_tuned_bc.csv
+    tuning_history.csv
+    tuning_summary.md
+```
+
+The tuned JSON is the source of truth for the updated terminal BC values.
+
+# Step 4: Create and Run the Tuned 3D CFD Case
+
+[`apply_tuned_bc_to_xml.py`](apply_tuned_bc_to_xml.py) transfers terminal RCR
+or resistance values from the Step 3 JSON into a new 3D `solver.xml`. It only
+changes terminal BC parameters; mesh paths, prescribed inflows, solver settings,
+and all other XML content are retained from the initial CFD input.
+
+```bash
+python3 pipeline_script/apply_tuned_bc_to_xml.py \
+  CASE_DIR/01-first-pass/solver.xml \
+  CASE_DIR/tuned_bc/CASE_0d_tuned_bc.json \
+  CASE_DIR/05-rerun/solver.xml
+```
+
+Create `CASE_DIR/05-rerun/`, copy or link the mesh and prescribed-flow files
+needed by the XML, submit the new `solver.xml` to the 3D solver, then
+postprocess the rerun:
+
+```bash
+python3 pipeline_script/postprocess_cfd.py CASE_DIR \
+  --results CASE_DIR/05-rerun/48-procs \
+  --output CASE_DIR/05-rerun
+```
+
+Compare the final-cycle mean Fontan pressure and the individual LPA/RPA flows
+with the clinical targets. The default acceptance criterion is 5% relative error
+for mean Fontan pressure and each pulmonary branch flow.
