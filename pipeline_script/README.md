@@ -115,6 +115,49 @@ raw JSON, or a generation manifest. Geometric vessel capacitance defaults to
 zero, consistent with the rigid-wall CFD model; RCR capacitance in `solver.xml`
 is retained unchanged.
 
+### Input and Output Layout
+
+The positional argument is the **case directory**, not an individual mesh or
+JSON file:
+
+```bash
+python3 pipeline_script/generate_0d_withoutsim.py CASE_DIR
+```
+
+`CASE_DIR` must contain the Step 0 configuration and solver input, plus the
+surface model and cap surfaces named by `step0_config.json`:
+
+```text
+CASE_DIR/
+  step0_config.json
+  solver.xml
+  mesh/
+    mesh-complete.exterior.vtp
+    mesh-surfaces/
+      cap_*.vtp
+      wall*.vtp
+  *.flow                         # Files referenced by solver.xml for FLOW BCs
+```
+
+The script creates the output directory automatically:
+
+```text
+CASE_DIR/
+  0d/
+    centerlines.vtp
+    CASE_0d.json
+```
+
+`CASE` is taken from `case_name` in `step0_config.json`. For example, passing
+`P3_BC_tuning_pipeline` creates
+`P3_BC_tuning_pipeline/0d/P3_0d.json`. To use a different output directory,
+pass `--output-directory`:
+
+```bash
+python3 pipeline_script/generate_0d_withoutsim.py CASE_DIR \
+  --output-directory 02_generate_0d
+```
+
 This repository's `vmtk` Conda environment is x86_64, so invoke it through
 Rosetta on this Mac:
 
